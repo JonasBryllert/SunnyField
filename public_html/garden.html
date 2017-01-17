@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Sunny Field</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/garden.css"/>
+		<script src="lib/jquery-1.7.1.min.js"></script>
+		<script src="scripts/garden.js"></script>
+		<meta http-equiv="Cache-Control" content="no-cache"/>
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="-1"/>
+	</head>
+
+	<body>
+		<button id="winterButton" class="buttonStyle">WINTER</button>
+		<button id="springButton" class="buttonStyle">
+			<span class="verticalText">S</span>
+			<span class="verticalText">P</span>
+			<span class="verticalText">R</span>
+			<span class="verticalText">I</span>
+			<span class="verticalText">N</span>
+			<span class="verticalText">G</span>
+		</button>
+		<button id="summerButton" class="buttonStyle">SUMMER</button>
+		<button id="autumnButton" class="buttonStyle">
+			<span class="verticalText">A</span>
+			<span class="verticalText">U</span>
+			<span class="verticalText">T</span>
+			<span class="verticalText">U</span>
+			<span class="verticalText">M</span>
+			<span class="verticalText">N</span>
+		</button>
+		
+		<div id="initialPane">
+			<h2 style="text-align: center">This is our garden year</h2>
+			<p>
+				This page is trying to describe our garden throughout the year.
+				Will keep adding pictures and comments over the year. It is a 
+				bit bare at the moment.
+			</p>
+			<p>
+				Click on the Winter, Spring, Summer, Autumn button surrounding
+				to view each season. To come back to this page click again on
+				the button for the currently showing season.
+			</p>
+		</div>
+		
+		<div id="winterPane">
+			<h2 style="text-align: center">Winter time</h2>
+
+			<div id="winterPhotoPane">
+				<!-- img src="images/garden/backward1.gif" alt="Photo" width="45px" height="350px" / -->
+				<img src="images/garden/winter1.jpg" alt="Photo" width="580px" height="350px" />
+				<!-- img src="images/garden/forward1.gif" alt="Photo" width="45px" height="350px" /-->
+			</div>
+		</div>
+		
+		<div id="springPane">
+			<div id="springHeader">	
+				<h2 style="text-align: center">Spring time</h2>
+				<!--p style="text-align: center">Spring is a lovely time. Enjoy these photos marking the start of the summer...</p-->
+			</div>
+			<div id="springPhotoPane">
+				<!-- img src="images/garden/backward1.gif" alt="Photo" width="45px" height="350px" / -->
+				<img src="images/garden/spring1.jpg" alt="Photo" width="580px" height="350px" />
+				<!-- img src="images/garden/forward1.gif" alt="Photo" width="45px" height="350px" /-->
+			</div>
+		</div>
+
+		<div id="summerPane">
+			<div id="summerHeader">	
+				<h2 style="text-align: center">Summer time</h2>
+			</div>
+			<div id="summerPhotoPane">
+				<img src="images/garden/summer1.jpg" alt="Photo" width="330px" height="350px" />
+				<img src="images/garden/summer2.jpg" alt="Photo" width="330px" height="350px" />
+			</div>
+		</div>
+
+		<div id="autumnPane">
+			<div id="autumnHeader">	
+				<h2 style="text-align: center">Autumn time</h2>
+			</div>
+			<div id="autumnPhotoPane">
+				<img src="images/garden/autumn1.jpg" alt="Photo" width="330px" height="350px" />
+				<img src="images/garden/autumn2.jpg" alt="Photo" width="330px" height="350px" />
+			</div>
+		</div>
+
+		<!-- 		<p>Bare with us, it is only winter...gardening stuff will come with the spring.</p> -->
+	</body>	
+	<head>
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="-1"/>
+	</head>
+</html>

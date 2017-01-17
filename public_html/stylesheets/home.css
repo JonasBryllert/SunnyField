@@ -1,0 +1,65 @@
+/*Total height must be 520px*/
+
+#centerpane {
+	margin: 0px;
+	float: left;
+	width: 549px;
+	height: 520px;
+	border-right: 1px solid black;
+	background-color: #A0A0A0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#rightpane {
+	float: left;
+	width: 174px;
+	margin: 0px 0px 0px 5px;
+	height: 520px;
+	border-left: 1px solid black;
+	background-color: #A0A0A0;
+	font-size: 10pt;
+	overflow: auto;
+}
+
+#rightpane ul {
+	line-height:1.5em;
+	padding: 0px 5px 5px 20px;
+}
+
+.inlinetext {
+	font-size: 8pt;	
+}
+
+.fakelink {
+	cursor: pointer;
+	font-style: italic;
+	font-size: 8pt;
+	color: blue;
+	text-align: center;
+}
+
+#foundationtext{
+	display: none;
+}
+#hidefoundation{
+	display: none;
+}
+#addresstext{
+	display: none;
+}
+#hideaddress{
+	display: none;
+}
+#drivewaytext{
+	display: none;
+}
+#hidedriveway{
+	display: none;
+}
+#treetext{
+	display: none;
+}
+#hidetrees{
+	display: none;
+}

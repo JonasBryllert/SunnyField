@@ -1,0 +1,146 @@
+body {
+	background-color: #A0A0A0;
+}
+
+div#leftPane {
+	margin: 0px;
+	float: left;
+	height: 520px;
+	width: 374px;
+	border-right: 1px solid black;
+/*	background-color: red;*/
+}
+
+div#blogPane {
+	margin: 0px;
+	float: left;
+	height: 520px;
+/*	width: 300px;*/
+	width: 375px;
+/*	background-color: white;*/
+/*	border-left: 1px solid black;*/
+}
+
+div#blogEntryDiv {
+	width: 375px;	
+/*	margin-left: 5px;
+	margin-right: 5px;*/	
+	height: 438px;
+/*	background-color: white;*/
+	overflow-y: scroll;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+div.buttonDiv {
+	width: 100%;
+	height: 30px;
+/*	background-color: green;*/
+	text-align: center;
+}
+
+div.blogheader {
+	font-size: 11pt;
+	background-color: olive;
+	text-align: center;
+}
+
+div.blogbackground {
+	font-size: 11pt;			
+	background-color: #A0A0A0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div.divHeader {
+	height: 40px;
+	width: 100%;
+/*	background-color: purple;*/
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+div#welcomePane {
+	margin: 0px;
+	height: 180px;
+	width: 354px;
+/*	background-color: yellow;*/
+	padding: 0px 10px;
+}
+
+#commentPane {
+	margin: 0px;
+	height: 290px;
+	width: 100%;
+/*	background-color: green;*/
+}
+
+.backgroundimage {
+	background-image: url('../images/ajax-loader.gif');
+	background-repeat:no-repeat;
+	background-position:center; 
+}
+
+.title {
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+span.small {
+	font-size: 9px;
+	margin-left: 60px;
+}
+
+form {
+	padding: 0px 5px;
+}
+
+/*th {
+	text-align: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+}*/
+
+fieldset {
+	width: 352px;
+	padding: 0px 0px 0px 10px;
+	border: 1px solid olive;
+	margin: 0px;
+	display: inline;
+/*	padding-left: 5px;*/
+}
+
+legend {
+	margin: 0px;
+	padding: 0px 6px;
+	text-align: center;
+/*	color: olive;*/
+}
+
+label {
+	width: 70px;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	display: block;
+}
+
+input#mail {
+	width: 240px;
+}
+
+textarea {
+	width: 240px;
+	height: 70px;
+	overflow: auto;
+	resize: none;
+}
+
+#send {
+	margin-left: 80px;
+} 

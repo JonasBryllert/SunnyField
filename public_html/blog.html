@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Sunny Field</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/blog.css"/>
+		<script src="lib/jquery-1.7.1.min.js"></script>
+		<script src="scripts/blog.js"></script>		
+	</head>
+
+	<body>
+		
+		<div id="leftPane">
+			<div class="divHeader">
+				Welcome to Sunny Field Blog
+			</div>
+			<div id="welcomePane">
+				<center>We love to hear from you!</center>
+				<p>On the blog you can read the latest what is happening and
+					below you can send us your comments and let us know what you think.
+					There is a tick box where you can choose if you want us to publish the
+					comment on the blog. This may take a day or two.
+				</p>
+			</div>
+
+			<div id="commentPane">
+				<form action="#">									
+					<fieldset>
+						<legend>Write a comment here</legend>
+		
+						<p><label for="mail">E-mail:</label><input type="text" id="mail" class="inputfield" name="mail" maxlength="40"/>
+		 					<br /><span class="small">You must give a valid e-mail address</span>
+						</p>
+						<p><label for="comment">Comment:</label><textarea id="comment" class="inputfield" name="comment"></textarea></p>
+						<p style="margin-left: 75px;"><input type="checkbox" name="canpublish" class="inputfield" value="Yes"/>Can we publish on blog?</p>
+						<p><input type="submit" id="send" value="Submit"/></p>
+					</fieldset>
+
+				</form>	
+			</div>		
+
+		</div>
+
+<!-- 		<div id="test"></div> -->
+ 		<div id="blogPane">
+			<div class="divHeader">
+				Blog
+			</div>
+			<div id="blogEntryDiv"></div>
+			<div class="buttonDiv">
+				<span id="blogNumber"></span>&nbsp;&nbsp;&nbsp;
+				<input type="button" id="btn_get_blog" value="Refresh" />
+			</div>
+		</div>
+				
+	</body>	
+</html>
+
+<!-- 			<form action="php/comment.php" method="post">
+				<fieldset>
+				<legend>Register a user here</legend>
+
+				<p><label for="user">User:</label> <input type="text" id="user" maxlength="20"/>
+					<br /><span class="small">You will use this to send log comments</span> 
+				</p>
+				<p><label for="name">First name:</label> <input type="text" id="firstname" maxlength="20"/></p>
+				<p><label for="surname">Surname:</label> <input type="text" id="surname" maxlength="20"/></p>
+				<p><label for="email">E-mail:</label> <input type="text" id="email" maxlength="20"/></p>
+				<p class="submit"><input type="submit" id="send" value="Submit"/></p>
+				</fieldset>
+			</form> -->

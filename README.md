@@ -1,4 +1,4 @@
 SunnyField
 ==========
 
-Project for JSF home page called SunnyField
+Project for SunnyField with PHP server

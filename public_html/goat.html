@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Sunny Field</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/goat.css"/>
+		<script src="lib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="scripts/goat.js"></script>
+	</head>
+
+	<body>
+		<h3 style="text-align: center">Sunny Field is an acre large...there is a lot of grass to cut.</h3>
+		<p>
+			We have tried a few things...Click 
+			<span id="fakelink" onclick="showPushMover(event)">
+				here
+			</span>
+			to see how we got on. Then click on each picture to follow the progress.
+			<br />
+		</p>
+		<div id="pushMoverPane" class="centerPane">
+			<div class="photoPane">
+				<img class="image" onclick="showPetrolMover(event)" alt="Push Mover photo" 
+				src="images/lawn/pushMover.jpg" />
+			</div>
+			
+			<div class="textPane">
+				<em>Our first attempt:</em>
+				<ul>
+					<li>Exercise is good</li>
+					<li>Cheap</li>
+					<li>Takes a long time</li>
+				</ul>
+				<br />Only try this if you can't afford a gym member ship.		
+			</div>
+		</div>
+		
+		<div id="petrolMoverPane" class="centerPane">
+			<div class="photoPane">
+				<img class="image" onclick="showRideOnMover(event)" alt="Petrol Mover photo" 
+				src="images/lawn/petrolMover.jpg" />
+			</div>
+			
+			<div class="textPane">
+				<em>Our second attempt:</em>
+				<ul>
+					<li>Noisy</li>
+					<li>Have to empty about a million times</li>
+					<li>Takes a long time</li>
+				</ul>
+				<br />Only try this if you have nothing better to do.		
+			</div>
+		</div>
+		
+		<div id="rideOnMoverPane" class="centerPane">
+			<div class="photoPane">
+				<img class="image" onclick="showGoat(event)" alt="Rideon Mover photo" 
+				src="images/lawn/rideOn.jpg" />
+			</div>
+			
+			<div class="textPane">
+				<em>Our third attempt:</em>
+				<ul>
+					<li>Noisy</li>
+					<li>Cost a lot of money</li>
+					<li>Still takes quite a long time</li>
+				</ul>
+				<br />Try this if you have lots of money.		
+			</div>
+		</div>
+		
+		<div id="goatPane" class="centerPane">
+			<div class="photoPane">
+				<img class="image" onclick="backToStart(event)" alt="Goat photo" 
+				src="images/lawn/goat.jpg" />
+			</div>
+			
+			<div class="textPane">
+				<em>Our next attempt?</em>
+				<ul>
+					<li>Need no petrol</li>
+					<li>Never need to empty</li>
+					<li>The output can be converted to cheese</li>
+					<li>Possibly a bit smelly</li>
+				</ul>
+				<br />Didn't try this yet but looks promising!		
+			</div>
+		</div>
+		
+
+		<!--a onclick="showRideOnMover(event)"><img alt="Push Mover photo" src="images/pushmover.jpg"/></a>
+		<a onclick="showGoat(event)"><img alt="Push Mover photo" src="images/pushmover.jpg"/></a>
+		<a onclick="showPushMover(event)"><img alt="Push Mover photo" src="images/pushmover.jpg"/></a-->
+		<!--p>The goat will arrive soon.</p-->
+	</body>	
+</html>

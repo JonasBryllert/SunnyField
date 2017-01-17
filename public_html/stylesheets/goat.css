@@ -1,0 +1,51 @@
+
+body {
+	background-color: #A0A0A0;	
+}
+
+.centerPane {
+	width: 100%;
+	height: auto;
+	background-color: #A0A0A0;
+	vertical-align: middle;
+
+}
+
+#pushMoverPane {
+	display: none; 
+}
+
+#petrolMoverPane {
+	display: none;
+}
+
+#rideOnMoverPane {
+	display: none;	
+}
+
+#goatPane {
+	display: none;	
+}
+
+.photoPane {
+	float: right;
+	cursor: pointer;
+}
+
+img {
+	width: 420px;
+	height: 350px; 
+/*	display: none;*/
+	border:5px solid black;
+}
+
+.textPane {
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+#fakelink {
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+}

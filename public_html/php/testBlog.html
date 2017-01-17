@@ -1,0 +1,104 @@
+
+<html>
+	<head>
+		<title>Testing blog</title>
+		<style type="text/css" media="screen">
+			div#blogDiv {
+				overflow: auto; 
+				height: 300px; 
+				width: 500px; 
+				background-color: #CCCCCC; 
+				border: 1px solid #555555;
+			}
+			div.blogheader {
+				font-size: 11pt;
+				background-color: #999999;
+				text-align: center;
+			}
+			div.blogbackground {
+				font-size: 9pt;			
+			}
+		</style>
+		<script language="JavaScript" type="text/javascript">
+			function getXmlHttpRequestObject() {
+				if (window.XMLHttpRequest) {
+					return new XMLHttpRequest();
+				} else if(window.ActiveXObject) {
+					return new ActiveXObject("Microsoft.XMLHTTP");
+				} else {
+					document.getElementById('blogDiv').innerHTML = 
+					'Status: Cound not create XmlHttpRequest Object.' +
+					'Consider upgrading your browser.';
+				}
+			}
+			var receiveReq = getXmlHttpRequestObject();
+			
+			//Gets the current messages from the server
+			function getBlogs() {
+				alert("Calling get blogs");
+				if (receiveReq.readyState == 4 || receiveReq.readyState == 0) {
+					receiveReq.open("GET", 'readBlog.php', true);
+					receiveReq.onreadystatechange = handleReceiveBlog; 
+					alert("sending request");
+					receiveReq.send(null);
+				}			
+			} 
+			
+/*			function handleReceiveBlog() {
+				if (receiveReq.readyState == 4) {
+					alert("received request: " + receiveReq.responseText);
+					//Get a reference to our chat container div for easy access
+					var blog_div = document.getElementById('blogDiv');
+					//Get the AJAX response and run the JavaScript evaluation function
+					//on it to turn it into a usable object.  Notice since we are passing
+					//in the JSON value as a string we need to wrap it in parentheses
+					var response = eval("(" + receiveReq.responseText + ")");
+					alert("response: " + response);
+
+					for(i=0;i < response.blogs.blog.length; i++) {
+						blogDiv.innerHTML += response.blogs.blog[i].email + '<br />';
+						blogDiv.innerHTML += response.blogs.blog[i].message + '<br />';
+						blogDiv.innerHTML += response.blogs.blog[i].time + '<br />';
+						blogDiv.scrollTop = blogDiv.scrollHeight;
+					}
+				}
+			}
+*/
+			
+			function handleReceiveBlog() {
+				if (receiveReq.readyState == 4) {
+					alert("received request: " + receiveReq.responseText);
+					//Get a reference to our chat container div for easy access
+					var blog_div = document.getElementById('blogDiv');
+					//Get the AJAX response and run the JavaScript evaluation function
+					//on it to turn it into a usable object.  Notice since we are passing
+					//in the JSON value as a string we need to wrap it in parentheses
+					var response = eval("(" + receiveReq.responseText + ")");
+					alert("response: " + response);
+					blogDiv.innerHTML = '';
+					for(i=0;i < response.blogs.blog.length; i++) {
+						blogDiv.innerHTML += '<div class="blogheader">From: ' + response.blogs.blog[i].email + '<br />Date: ' + response.blogs.blog[i].time + '</div>';
+						blogDiv.innerHTML += '<div class="blogbackground">' + response.blogs.blog[i].message + '</div>';
+						blogDiv.innerHTML += '<br />';
+						blogDiv.scrollTop = blogDiv.scrollHeight;
+					}
+				}
+			}
+
+		//	window.onload=function() {
+		//		alert("window loaded");
+		//		getBlogs();
+		//	};
+		</script>
+	</head>
+	
+	<body>
+		<h2>The blog.</h2>
+		<div id="blogDiv">
+			
+		</div>
+		<input type="button" name="btn_get_blog" id="btn_get_blog" value="Get blog" onclick="javascript:getBlogs();" />
+		<button value="test" onclick="javascript:getBlogs();"/>
+	</body>
+	
+</html>

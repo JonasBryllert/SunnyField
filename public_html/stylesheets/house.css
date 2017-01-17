@@ -1,0 +1,40 @@
+body {
+	background-color: #A0A0A0;
+}
+
+/*#centerpane {
+	width: 100%;
+	height: 100%;
+	background-color: #A0A0A0;
+}*/
+#rightpane {
+	float: right; 
+	width: 510px;
+/*	height: auto;*/
+	height: 420px;
+}
+
+#photopane {
+	width: 500px;
+	height: 380px;
+	border: 5px solid black;
+}
+
+#photocaption {
+	text-align: center;
+}
+
+#textPane {
+	overflow: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.photolink {
+/*	cursor: pointer;*/
+	color: blue;
+}
+
+/*#prevLink {
+	color: fuchsia;	
+}*/
